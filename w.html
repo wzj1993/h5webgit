@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript" src="scripts/jquery-1.8.3.min.js"></script>
+		<script>
+			$(function(){
+				var a="abcd,tgf";
+				var b=[];
+				var c=[];
+				var a2="";
+				var a3="";
+				var s4="";
+				for(var i=0;i<a.length;i++){
+					a.charAt(i).charCodeAt()
+					c.push(a.charAt(i).charCodeAt())
+					b.push(a.charAt(i).charCodeAt()+10);
+				}
+				console.log("没有加上10的ASCII"+c)
+				console.log("有加上10的ASCII"+b);
+				for(var j=0;j<a.length;j++){
+					
+					console.log(String.fromCharCode(c[j]));
+					a2+=String.fromCharCode(c[j]);
+					a3+=String.fromCharCode(b[j]);
+				}
+				console.log("最开始的字符串"+a);
+				console.log("没有加上10的ASCII转化为字符串"+a2);
+				console.log("加上10的ASCII转化为字符串"+a3);
+		  console.log("返回原样");
+		  for(var s=0;s<a.length;s++){
+		  	   s4+=String.fromCharCode((a3.charAt(s).charCodeAt()-10))
+		  	
+		  }
+		  console.log(s4);
+			});
+			
+		</script>
+	</head>
+	<body>
+	</body>
+</html>
